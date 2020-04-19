@@ -14,7 +14,6 @@ First, let’s refresh our memory about the protocols.
 Internet Message Access Protocol (IMAP) is an Internet standard protocol used to retrieve email messages from a mail server (e.g. Gmail, Yahoo) over a TCP/IP connection. Created in 1986. The latest version is IMAP4 (comes from 90s!) which is supported in the imaplib with IMAP4 class that we are going to use! 🙂
 ### What is SMPT?
 Simple Mail Transfer Protocol is a standard user-level protocol used for sending messages, usually through port 587 or 465. First created in 1982, updated in 2008.
-To ease ourselves in overseeing their actions, they both inherit from Logger. A simple class having only Log(text) method. It will output messages to the console when log flag is set to True.
 
 ## Goal
 The goal of this exercise is to go though inbox and pick the UNANSWERED emails that were sent today. Assuming that a hard-working developer requires some holidays, we need to notify our acquaintances that we are out of the office. For that, we will use EmailSender to send series of email to each of them with specified message.
