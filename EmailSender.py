@@ -22,7 +22,7 @@ class EmailSender(Logger):
 
             try:
                 body_with_subject = f"Subject: {info['subject']}\n\n{body}" # Include subject in the body
-                self.server.sendmail(self.email_address, self.email_address, body_with_subject)
+                self.server.sendmail(self.email_address, info['to'], body_with_subject)
                 self.Log(f"Email sent to {info['to']}\nMessage:\n{body[:200]}{'' if len(body) < 201 else '...'}")
                 sent += 1
             except Exception as e:
