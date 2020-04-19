@@ -96,7 +96,9 @@ We construct the criteria.
 since_formatted = since.strftime("%d-%b-%Y")
 query = f"UNANSWERED SENTSINCE {since_formatted}"
 status, response = self.imap.search(None, query)
+```
 If status is OK we can proceed with fetching the ids of emails embedded in response.
+```
 if status == 'OK':
 	unread_msg_nums = response[0].split() # Returns bytes
 else:
