@@ -5,6 +5,7 @@ import datetime
 email_user = "xxx@gmail.com" # Your gmail address here
 password = "xxx" # Your password
 
+# Ensure "Less sure app access" option is enabled for your mail
 email_reader = ImapReader(email_user, password)
 email_sender = EmailSender(email_user, password)
 
