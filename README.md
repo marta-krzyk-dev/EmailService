@@ -4,8 +4,8 @@ Let’s go through a small program to uncap the possibilities of IMAP and SMPT e
 
 ## Features:
 - [x] Log in email server
-- [x] Read emails from an inbox
-- [x] Send emails
+- [x] Read emails from an inbox via **IMAP**
+- [x] Send emails via **SMTP**
 - [x] Log onto terminal
 
 ## Theory
